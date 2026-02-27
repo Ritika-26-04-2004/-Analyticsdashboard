@@ -1,3 +1,6 @@
+const dns = require('dns');
+// THIS LINE BYPASSES WINDOWS DNS:
+dns.setServers(['8.8.8.8', '8.8.4.4']); 
 const mongoose = require("mongoose");
 
 const connectDB = async () => {
